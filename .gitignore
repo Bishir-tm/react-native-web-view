@@ -1,0 +1,55 @@
+/node_modules 
+.env
+#-*- mode: gitignore -*-
+
+# General
+.DS_Store
+.idea/
+.vscode/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build artifacts
+dist/
+build/
+
+#-*- mode: gitignore -*-
+
+# General
+.DS_Store
+.idea/
+.vscode/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build artifacts
+dist/
+build/
+
+# Databases
+mongodb-data/
+
+# Logs
+*.log
+*.svclog
+
+# OS generated files
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*.sublime-project
+*.sublime-workspace
+
+# Miscellaneous
+*.zip
+*.rar
+*.tar.gz
+*.pid
+*.pid.lock
