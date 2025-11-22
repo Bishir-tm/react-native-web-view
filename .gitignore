@@ -1,55 +1,41 @@
-/node_modules 
-.env
-#-*- mode: gitignore -*-
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# General
-.DS_Store
-.idea/
-.vscode/
-
-# Node
+# dependencies
 node_modules/
-npm-debug.log
-yarn-error.log
 
-# Build artifacts
+# Expo
+.expo/
 dist/
-build/
+web-build/
+expo-env.d.ts
 
-#-*- mode: gitignore -*-
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
 
-# General
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
 .DS_Store
-.idea/
-.vscode/
+*.pem
 
-# Node
-node_modules/
-npm-debug.log
-yarn-error.log
+# local env files
+.env*.local
 
-# Build artifacts
-dist/
-build/
+# typescript
+*.tsbuildinfo
 
-# Databases
-mongodb-data/
-
-# Logs
-*.log
-*.svclog
-
-# OS generated files
-ehthumbs.db
-Thumbs.db
-
-# Editor files
-*.sublime-project
-*.sublime-workspace
-
-# Miscellaneous
-*.zip
-*.rar
-*.tar.gz
-*.pid
-*.pid.lock
+# generated native folders
+/ios
+/android
