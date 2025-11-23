@@ -11,11 +11,12 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs camera access to scan product barcodes"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -23,7 +24,8 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.company.nutritiontrackerwebview",
-      "versionCode": 1
+      "versionCode": 1,
+      "permissions": ["CAMERA", "android.permission.CAMERA"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -32,6 +34,14 @@
       "eas": {
         "projectId": "1bcd59a1-4900-4375-af24-66d0d056a799"
       }
-    }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to scan barcodes."
+        }
+      ]
+    ]
   }
 }
